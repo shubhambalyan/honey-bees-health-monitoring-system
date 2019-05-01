@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html> 
+<head>
+	<title>Smart Farm and Agriculture</title>
+    <link href="CSS/c3.css" rel="stylesheet" type="text/css">
+<script src="js/d3.v3.min.js" charset="utf-8"></script>
+<script src="js/c3.min.js"></script>
+<style type="text/css">
+body {
+	border-top-style: solid;
+	border-top-color: red;
+	border-top-width: 5px;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+#one {
+	float: right;
+	margin-top: 20px;
+	margin-right: 16px;
+}
+#two {
+	margin-top: 8px;
+    margin-left: 300px;
+}
+#three {
+	border-bottom-width: 5px;
+	border-bottom-color: red;
+	border-bottom-style: solid;
+}
+#five {
+	text-align: center;
+	background-color: gray;
+}
+.sp1 {
+	color: red;
+}
+#id1 {
+	text-align: center;
+	color: blue;
+}
+#id4 {
+	margin-left: 610px;
+	margin-top: 20px;
+}
+#id2 {
+	text-align: center;
+}
+.error {color: #FF0000;}
+#six {
+    text-align: center;
+    font-size: 32px;
+}
+</style>
+</head>
+<body>
+	<div>
+		<header id="three">
+        <img src="images/title.jpg" width="700px" height="100px" id="two">
+        </header>
+    </div>
+    <div id="six">Temperature Graph</div>
+    <div id="chart"></div>
+<script>
+var chart = c3.generate({
+    bindto: '#chart',
+    data: {
+      columns: [
+        ['Temperature', 25,26,26.5,27,28,28,29,30,31,31,32,33,33,34,34,35,36,37,38,38,39,36,34,33,30]
+      ],
+    },
+    axis: {
+      y: {
+        label: { // ADD
+          text: 'Temperature Degree Celsius',
+          position: 'outer-middle'
+        }
+      }
+    }
+});
+</script>
+    <div>
+    	<footer id="four">
+    		<h5 id="five">&copy;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SMART FARM AND AGRICULTURE</h5>
+    	</footer>
+    </div>
+</body>
+</html>

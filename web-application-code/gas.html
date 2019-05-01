@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html> 
+<head>
+	<title>Smart Farm and Agriculture</title>
+    <link href="CSS/c3.css" rel="stylesheet" type="text/css">
+<script src="js/d3.v3.min.js" charset="utf-8"></script>
+<script src="js/c3.min.js"></script>
+<style type="text/css">
+body {
+	border-top-style: solid;
+	border-top-color: red;
+	border-top-width: 5px;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+#one {
+	float: right;
+	margin-top: 20px;
+	margin-right: 16px;
+}
+#two {
+	margin-top: 8px;
+    margin-left: 300px;
+}
+#three {
+	border-bottom-width: 5px;
+	border-bottom-color: red;
+	border-bottom-style: solid;
+}
+#five {
+	text-align: center;
+	background-color: gray;
+}
+.sp1 {
+	color: red;
+}
+#id1 {
+	text-align: center;
+	color: blue;
+}
+#id4 {
+	margin-left: 610px;
+	margin-top: 20px;
+}
+#id2 {
+	text-align: center;
+}
+.error {color: #FF0000;}
+#six {
+    text-align: center;
+    font-size: 32px;
+}
+</style>
+</head>
+<body>
+	<div>
+		<header id="three">
+        <img src="images/title.jpg" width="700px" height="100px" id="two">
+        </header>
+    </div>
+    <div id="six">Carbon Monoxide Gas Level Graph</div>
+    <div id="chart"></div>
+<script>
+var chart = c3.generate({
+    bindto: '#chart',
+    data: {
+      columns: [
+        ['CO Gas Level', 7,9,12,13,15,16,18,19,21,21,23,23,25,26,27,29,31,33,25,28,31,35,41,44,45]
+      ],
+    },
+    axis: {
+      y: {
+        label: { // ADD
+          text: 'CO Gas Level ppm',
+          position: 'outer-middle'
+        }
+      }
+    }
+});
+</script>
+    <div>
+    	<footer id="four">
+    		<h5 id="five">&copy;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SMART FARM AND AGRICULTURE</h5>
+    	</footer>
+    </div>
+</body>
+</html>

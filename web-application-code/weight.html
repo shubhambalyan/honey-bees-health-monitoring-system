@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html> 
+<head>
+	<title>Smart Farm and Agriculture</title>
+    <link href="CSS/c3.css" rel="stylesheet" type="text/css">
+<script src="js/d3.v3.min.js" charset="utf-8"></script>
+<script src="js/c3.min.js"></script>
+<style type="text/css">
+body {
+	border-top-style: solid;
+	border-top-color: red;
+	border-top-width: 5px;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+#one {
+	float: right;
+	margin-top: 20px;
+	margin-right: 16px;
+}
+#two {
+	margin-top: 8px;
+    margin-left: 300px;
+}
+#three {
+	border-bottom-width: 5px;
+	border-bottom-color: red;
+	border-bottom-style: solid;
+}
+#five {
+	text-align: center;
+	background-color: gray;
+}
+.sp1 {
+	color: red;
+}
+#id1 {
+	text-align: center;
+	color: blue;
+}
+#id4 {
+	margin-left: 610px;
+	margin-top: 20px;
+}
+#id2 {
+	text-align: center;
+}
+.error {color: #FF0000;}
+#six {
+    text-align: center;
+    font-size: 32px;
+}
+</style>
+</head>
+<body>
+	<div>
+		<header id="three">
+        <img src="images/title.jpg" width="700px" height="100px" id="two">
+        </header>
+    </div>
+    <div id="six">Weight Load Cell Graph</div>
+    <div id="chart"></div>
+<script>
+var chart = c3.generate({
+    bindto: '#chart',
+    data: {
+      columns: [
+        ['Weight', 51,52,52,55,54,53,52,55,56,57,54,55,52,51,58,59,57,58,59,60,49,51,55,57,55]
+      ],
+    },
+    axis: {
+      y: {
+        label: { // ADD
+          text: 'Weight Kg',
+          position: 'outer-middle'
+        }
+      }
+    }
+});
+</script>
+    <div>
+    	<footer id="four">
+    		<h5 id="five">&copy;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SMART FARM AND AGRICULTURE</h5>
+    	</footer>
+    </div>
+</body>
+</html>
